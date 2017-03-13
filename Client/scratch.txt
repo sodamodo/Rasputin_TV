@@ -1,0 +1,10 @@
+    $('#item_image').html("<img src=" + item_data.image + ">");
+
+
+35 tall, 60wide 
+3 from left edge to left tv edge 
+33 tv width 
+8 from top to TV
+
+strip size: 28em/20em
+item image:15.8/12.8
