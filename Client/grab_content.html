@@ -11,26 +11,29 @@
 
         }
 
-
-
-        #strip {
-
-        }
+{#        #container {#}
+{#            height: 100%;#}
+{#            width: 100%;#}
+{#        }#}
 
         div {
 
-            font-size: 20px;
+{#            font-size: 20px;#}
+{#            border: 1px solid white;#}
+{#            border-width: 0 1px;#}
+
+
         }
         #container  {
             width:100%;
-            height: 100%;
+            height: 57%;
         }
 
 
         #strip img {
             width: 55%;
             height: 77%;
-            position: absolute;
+            position: relative;
             left: 3%;
             top: 12%;
             z-index: -1;
@@ -41,31 +44,45 @@
         #item_image img {
             width: 15.6%;
             height: 13%;
-            position: absolute;
+            position: relative;
             left: 15%;
             top: 20%;
             font-size: 20px;
         }
 
         #header {
+
+{#            margin-bottom: 50px;#}
+            margin-left:auto;
+            margin-right: auto;
             font-size: 80px;
-            color:white;
-            margin-bottom: 50px;
-            margin: auto;
-            font-size: 80px;
+            padding-bottom: auto;
+            padding-top: auto;
+            color: white;
         }
+
+
 
         #bar {
             width: 100%;
             height: 7em;
-            position: absolute;
+            position: relative;
 {#            float:left;#}
             left: 2em;
             top: 15.1em;
-            font-size: 20px;
+            font-size: 30px;
             background-color: blue;
             z-index: -2;
             text-align:right;
+            color: white;
+            right-padding:50px;
+        }
+
+        #pst{
+            color:white;
+            float:right;
+            font-size:40px;
+            margin-right: 10%
         }
 
 
@@ -74,12 +91,13 @@
     </style>
 </head>
 <body>
+    <div id="container">
+        <div id="header"><center>buy direct from us & save</center></div>
 
-    <div id="pst">Psst:<br>We love you more than<br>Amazon or Ebay does</div>
-    <div id="bar">Buy DIRECT from our website<br>get 5% off our ebay/amazon listing price</div>
-    <div id="header"><center>buy direct from us & save</center></div>
-    <div id="strip"><img src="images/filmstrip.png"></div><div id="item_image"></div>
+        <div id="bar">Buy DIRECT from our website<br>get 5% off our ebay/amazon<br> listing price</div>
 
+        <div id="strip"><img src="images/filmstrip.png"><div id="pst"><center>Psst:</center>We<img src="images/web_heart.png" style="height:25px;width:25px;">   you more than<br>Amazon or Ebay does</div></div><div id="item_image"></div>
+    </div>
 
 
 
