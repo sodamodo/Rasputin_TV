@@ -3,103 +3,121 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://zachleat.github.io/BigText/dist/bigtext.js"></script>
+
     <style>
 
-        body {
-            background-color: black;
+            body {
+        background-color: black;
+        color: white;
+    }
 
-        }
+    div {
+        border:solid white 1px;
+    }
+
+
 
 {#        #container {#}
 {#            height: 100%;#}
 {#            width: 100%;#}
 {#        }#}
 
-        div {
-
+{#        div {#}
+{#            display: flex;#}
 {#            font-size: 20px;#}
 {#            border: 1px solid white;#}
 {#            border-width: 0 1px;#}
 
 
-        }
-        #container  {
-            width:100%;
-            height: 57%;
-        }
-
-
-        #strip img {
-            width: 55%;
-            height: 77%;
-            position: relative;
-            left: 3%;
-            top: 12%;
-            z-index: -1;
-
-
-        }
-
-        #item_image img {
-            width: 15.6%;
-            height: 13%;
-            position: relative;
-            left: 15%;
-            top: 20%;
-            font-size: 20px;
-        }
-
-        #header {
-
-{#            margin-bottom: 50px;#}
-            margin-left:auto;
-            margin-right: auto;
-            font-size: 80px;
-            padding-bottom: auto;
-            padding-top: auto;
-            color: white;
-        }
 
 
 
-        #bar {
-            width: 100%;
-            height: 7em;
-            position: relative;
-{#            float:left;#}
-            left: 2em;
-            top: 15.1em;
-            font-size: 30px;
-            background-color: blue;
-            z-index: -2;
-            text-align:right;
-            color: white;
-            right-padding:50px;
-        }
+{#     #strip img{#}
+{#     }#}
 
-        #pst{
-            color:white;
-            float:right;
-            font-size:40px;
-            margin-right: 10%
-        }
+{#        <div id="header">buy direct from us & save</div>#}
+{#                <div id="strip"><img src="images/filmstrip.png"></div>#}
+{#        <div id="item_image"></div>#}
+{#        <div id="pst">Psst:We<img src="images/web_heart.png" style="height:25px;width:25px;">   you more than<br>Amazon or Ebay does</div>#}
+{##}
+{#        <div id="bar">Buy DIRECT from our website<br>get 5% off our ebay/amazon<br> listing price</div>#}
+    #love {
 
+    }
+
+
+    #header {
+        color:white;
+{#        font-size: 80%;#}
+{#        margin-bottom: 20%;#}
+
+     }
+
+{#    #filmstrip {#}
+{#        height:70%;#}
+{#        overflow: hidden;#}
+{#    }#}
+    #bar {
+        position:relative;
+        width:100%;
+        height:7em;
+        top:30%;
+
+    }
 
 
 
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="header"><center>buy direct from us & save</center></div>
 
-        <div id="bar">Buy DIRECT from our website<br>get 5% off our ebay/amazon<br> listing price</div>
 
-        <div id="strip"><img src="images/filmstrip.png"><div id="pst"><center>Psst:</center>We<img src="images/web_heart.png" style="height:25px;width:25px;">   you more than<br>Amazon or Ebay does</div></div><div id="item_image"></div>
+    <div class="container-fluid">
+            <div id="bar"></div>
+
+            <div class="row header text-center">
+                <div class="col" id="header">
+                    <h1>buy direct from us & save</h1>
+                 </div>
+            </div>
+
+            <div class="row">
+             <div class="col-sm-6 text-right align-top">
+                 <img class="img-responsive" src="images/filmstrip.png">
+               </div>
+
+                <div class="col-sm-6 text-center align-top" id="pst" style="font-size: 100px;font-size: 2.5vw; float:right;">Psst:<br> We heart you more than<br> Ebay or Amazon does</div>
+                <div class="col-sm-6 text-center" style="font-size: 100px;font-size: 2.5vw">Buy DIRECT from our website<br>get 5% off our ebay/amazon<br>listing price</div>
+            </div>
+        </div>
+
+
+
+
+
+
     </div>
+    </div>
+<script>
+$('#header').bigtext({
+    maxfontsize: 200 // default is 528 (in px)
+});
+</script>
 
-
+<script>
+$('#pst').bigtext({
+    maxfontsize: 300 // default is 528 (in px)
+});
+</script>
 
 <script>
     $.support.cors = true;

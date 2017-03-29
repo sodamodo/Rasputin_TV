@@ -1,4 +1,25 @@
-    $('#item_image').html("<img src=" + item_data.image + ">");
+
+
+
+    <div class="container-fluid">
+
+        <div class="col-8" style="border: solid green 1px;">
+            <img src="images/filmstrip.png" style="width: 50%;float:left;">
+        </div>
+
+        <div class="col-4"  style="background-color:red;float:left;">
+            <div class="row"  >
+                Psst: We heart you more than Ebay or Amazon does
+            </div>
+
+            <div class="row" style="background-color:blue;">
+                Buy DIRECT from our website<br>get 5% off our ebay/amazon<br> listing price
+            </div>
+
+            <div class="row">
+                Save more dough when you buy from us
+            </div>
+        </div>
 
 
 35 tall, 60wide 
