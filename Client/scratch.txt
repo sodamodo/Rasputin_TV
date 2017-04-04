@@ -37,3 +37,6 @@ item image:15.8/12.8 = 1.
 {#    <div id="strip"><img src="images/filmstrip.png"></div><div id="item_image"></div>#}
 
 <div id="header"><center>buy direct from us & save</center></div>
+
+
+Pssst:<br>We HRT you more than<br> Amazon or Ebay does

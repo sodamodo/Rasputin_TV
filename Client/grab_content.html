@@ -12,6 +12,7 @@
             height: 2160px;
             font-size:40px;
             border: solid white 1px;
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
             
 
         }
@@ -26,25 +27,25 @@
 
         }
 
-
+        .font {
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+        }
 
         #strip img {
             width: 2137px;
             height: 1458px;
             position: absolute;
             left: 101px;
-            top: 480px;
+            top: 530px;
             z-index: -1;
-
-
         }
 
         #item_image img {
-            width: 1190px;
-            height: 1269px;
+            width: 1290px;
+            height: 1169px;
             position: absolute;
-            left: 580px;
-            top: 970px;
+            left: 520px;
+            top: 680px;
             font-size: 20px;
         }
 
@@ -54,7 +55,7 @@
             font-size: 320px;
             color:white;
             width:3840px;
-            height:324px;
+            height:304px;
             padding: 0 auto 0 auto;
             background:green;
 
@@ -62,23 +63,113 @@
         }
 
         #bar {
-            width: 100%;
+            width: 3840px;
             height: 432px;
             position: absolute;
 {#            float:left;#}
             left: 0px;
-            top: 1080px;
+            top: 1260px;
             font-size: 20px;
             background-color: blue;
             z-index: -2;
             text-align:right;
         }
 
-        #pst {
-            font-size: 200px;
+
+
+        #pst1 {
+            font-size: 120px;
             position: absolute;
-            top: 486
+            top: 540px;
+            left: 2947px;
+            color:white;
         }
+
+        #pst2 {
+            font-size: 120px;
+            position: absolute;
+            top: 680px;
+            left: 2500px;
+            color:white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+
+        }
+
+        #pst3 {
+            font-size: 120px;
+            position: absolute;
+            top: 820px;
+            left: 2530px;
+            color:white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #direct1 {
+            font-size: 120px;
+            position: absolute;
+            top: 1285px;
+            left: 2350px;
+            color:white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #direct2 {
+            font-size: 120px;
+            position: absolute;
+            top: 1410px;
+            left: 2350px;
+            color:white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #direct3 {
+            font-size: 120px;
+            position: absolute;
+            top: 1545px;
+            left: 2350px;
+            color:white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #dough1 {
+            font-size: 120px;
+            position: absolute;
+            top: 1800px;
+            left: 2510px;
+            color:white;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #dough2 {
+            font-size: 120px;
+            position: absolute;
+            top: 1950px;
+            left: 2510px;
+            color:white;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #link {
+            bottom: 50px;
+            left: 750px;
+            position: absolute;
+        }
+
+
 
 
 
@@ -88,7 +179,18 @@
 <body>
     <div id="header"><center>Buy direct from us & Save</center></div>
     <div id="bar"></div>
-    <div id="strip"><img src="images/filmstrip.png"></div><div id="item_image"></div>
+    <div id="strip"><img src="images/filmstrip_clip.png"></div><div id="item_image"></div>
+    <div id="pst1">Pssst:</div>
+    <div id="pst2">We HRT you more than</div>
+    <div id="pst3">Amazon or Ebay does</div>
+    <div id="direct1">Buy Direct from our website</div>
+    <div id="direct2">get 5% off our ebay/amazon</div>
+    <div id="direct3">listing price</div>
+    <div id="dough1">Save more </div>
+    <div  id="dough2">when you buy from us </div>
+    <div id="#link">http://stores.ebay.com/rasputin-music-dvd</div>
+    <div id="price"></div>
+
 
 
 
@@ -99,6 +201,7 @@
         console.log(data.image);
         console.log(data.title);
         $('#item_image').html("<img src=" + data.image + ">")
+
 
     })
 
