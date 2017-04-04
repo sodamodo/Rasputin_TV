@@ -28,4 +28,12 @@
 8 from top to TV
 
 strip size: 28em/20em = 1.4
-item image:15.8/12.8 = 1.2
+item image:15.8/12.8 = 1.
+
+
+{#    <div id="pst">Psst:<br>We love you more than<br>Amazon or Ebay does</div>#}
+{#    <div id="bar">Buy DIRECT from our website<br>get 5% off our ebay/amazon listing price</div>#}
+{##}
+{#    <div id="strip"><img src="images/filmstrip.png"></div><div id="item_image"></div>#}
+
+<div id="header"><center>buy direct from us & save</center></div>
