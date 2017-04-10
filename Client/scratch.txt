@@ -21,6 +21,8 @@
             </div>
         </div>
 
+<div id="item_image"><img src="https://cdn.shopify.com/s/files/1/0806/6897/products/11687_FRONT_1.jpeg"></div>
+
 
 35 tall, 60wide 
 3 from left edge to left tv edge 
@@ -40,3 +42,19 @@ item image:15.8/12.8 = 1.
 
 
 Pssst:<br>We HRT you more than<br> Amazon or Ebay does
+<div class="col-1"></div>
+
+<div id="item_image"><img src="https://cdn.shopify.com/s/files/1/0806/6897/products/11687_FRONT_1.jpeg"></div>
+width:62%;
+
+            background-image: url('images/filmstrip_clip.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40%;
+            height: 100%;
+            padding-top: 80%; /* (img-height / img-width * width) */
+
+
+TODO:
+
+Change django link output so it that it ends in .jpg

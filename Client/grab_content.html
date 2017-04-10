@@ -1,216 +1,107 @@
+
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico">-->
 
-        body {
-            background-color: black;
-            width:3840px;
-            height: 2160px;
-            font-size:40px;
-            border: solid white 1px;
-            font-family: Tahoma, Verdana, Segoe, sans-serif;
-            
+    <title>Rasputin</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <style>
+
+
+
+
+        #filmstrip {
+            background-image: url('images/filmstrip_clip.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 100%;
+            padding-top: 80%; /* (img-height / img-width * width) */
 
         }
 
-
-
-        #strip {
-
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
 
-        div {
-
-        }
-
-        .font {
-            font-family: Tahoma, Verdana, Segoe, sans-serif;
-        }
-
-        #strip img {
-            width: 2137px;
-            height: 1458px;
+        #item_image {
+            display: block;
             position: absolute;
-            left: 101px;
-            top: 530px;
-            z-index: -1;
-        }
+            top: 4%;
+            left: 10.5%;
+            width:30%;
+            height:20%;
 
-        #item_image img {
-            width: 1290px;
-            height: 1169px;
-            position: absolute;
-            left: 520px;
-            top: 680px;
-            font-size: 20px;
+
         }
 
         #header {
-            position: absolute;
-
-            font-size: 320px;
-            color:white;
-            width:3840px;
-            height:304px;
+            font-size: 6vw;
             padding: 0 auto 0 auto;
-            background:green;
 
 
         }
-
-        #bar {
-            width: 3840px;
-            height: 432px;
-            position: absolute;
-{#            float:left;#}
-            left: 0px;
-            top: 1260px;
-            font-size: 20px;
-            background-color: blue;
-            z-index: -2;
-            text-align:right;
-        }
-
-
-
-        #pst1 {
-            font-size: 120px;
-            position: absolute;
-            top: 540px;
-            left: 2947px;
-            color:white;
-        }
-
-        #pst2 {
-            font-size: 120px;
-            position: absolute;
-            top: 680px;
-            left: 2500px;
-            color:white;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-
-        }
-
-        #pst3 {
-            font-size: 120px;
-            position: absolute;
-            top: 820px;
-            left: 2530px;
-            color:white;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #direct1 {
-            font-size: 120px;
-            position: absolute;
-            top: 1285px;
-            left: 2350px;
-            color:white;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #direct2 {
-            font-size: 120px;
-            position: absolute;
-            top: 1410px;
-            left: 2350px;
-            color:white;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #direct3 {
-            font-size: 120px;
-            position: absolute;
-            top: 1545px;
-            left: 2350px;
-            color:white;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #dough1 {
-            font-size: 120px;
-            position: absolute;
-            top: 1800px;
-            left: 2510px;
-            color:white;
-            text-align: left;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #dough2 {
-            font-size: 120px;
-            position: absolute;
-            top: 1950px;
-            left: 2510px;
-            color:white;
-            text-align: left;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        #link {
-            bottom: 50px;
-            left: 750px;
-            position: absolute;
-        }
-
-
-
 
 
 
     </style>
-</head>
-<body>
-    <div id="header"><center>Buy direct from us & Save</center></div>
-    <div id="bar"></div>
-    <div id="strip"><img src="images/filmstrip_clip.png"></div><div id="item_image"></div>
-    <div id="pst1">Pssst:</div>
-    <div id="pst2">We HRT you more than</div>
-    <div id="pst3">Amazon or Ebay does</div>
-    <div id="direct1">Buy Direct from our website</div>
-    <div id="direct2">get 5% off our ebay/amazon</div>
-    <div id="direct3">listing price</div>
-    <div id="dough1">Save more </div>
-    <div  id="dough2">when you buy from us </div>
-    <div id="#link">http://stores.ebay.com/rasputin-music-dvd</div>
-    <div id="price"></div>
+  </head>
+
+  <body>
+
+        <div class="container-fluid">
+
+          <div class="row">
+            <div id="header" class="text-center">buy direct from us & save</div>
+
+          </div>
 
 
 
-
-<script>
-    $.support.cors = true;
-
-    var item_data = $.getJSON( "http://127.0.0.1:8000/json", function(data) {
-        console.log(data.image);
-        console.log(data.title);
-        $('#item_image').html("<img src=" + data.image + ">")
+            <div class="col-lg-1 col-xl-1" id="filmstrip">
+            <div class="col-lg-4 col-xl-4" id="filmstrip">
 
 
-    })
+            </div>
+
+            <div class="col-lg-8 col-xl-8 pull-right">
+                Colll
+            </div>
 
 
 
 
 
+        <!-- /.container -->
+    </div>
 
 
+      <script>
+        $.support.cors = true;
+
+        var item_data = $.getJSON( "http://127.0.0.1:8000/json", function(data) {
+            console.log(data.image);
+            console.log(data.title);
+            $('#film_strip').html("<img src=" + data.image + ">")
+
+
+        })
 </script>
-</body>
+  </body>
 </html>
+
+
