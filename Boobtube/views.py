@@ -32,8 +32,4 @@ def get_shoppify(request):
 
 
 def display(request):
-    items = get_shoppify()
-    random_item = random.choice(items)
-    title = random_item[0]
-    context = {title: "title"}
-    return render(request, "block.html", context)
+    return render(request, "grab_content.html")
